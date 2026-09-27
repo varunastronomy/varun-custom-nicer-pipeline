@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Mission data and generated products
+*.evt
+*.mkf
+*.fits
+*.pha
+*.arf
+*.rmf
+*.lc
+*.xcm
+*.log
+*.png
+l2_products/
