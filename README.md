@@ -16,6 +16,18 @@ Varun's Custom NICER Pipeline is an independent Python orchestration program for
 >
 > **Scope:** This program orchestrates external NICERDAS tools; it does not reimplement NICER calibration or screening algorithms. Scientific products remain dependent on the installed HEASoft/NICERDAS and CALDB versions, the input data, and the explicitly recorded task parameters.
 
+## Portfolio workflow
+
+This repository is stage one of M. Varun's public X-ray analysis workflow:
+
+```text
+Varun's Custom NICER Pipeline
+              ↓
+Spectral Product Generation
+```
+
+Next stage: [Spectral Product Generation](https://github.com/varunastronomy/spectral-product-generation)
+
 ## Visual workflow
 
 <p align="center">
