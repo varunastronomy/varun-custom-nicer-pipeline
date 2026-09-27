@@ -15,3 +15,7 @@ venv/
 *.log
 *.png
 l2_products/
+
+# Version-controlled repository artwork
+!assets/*.png
+!assets/*.gif

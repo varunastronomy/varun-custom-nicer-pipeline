@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/nicerflow-banner.png" alt="NICERFlow cover showing NICER observation and data-processing workflow" width="100%">
+</p>
+
 # NICERFlow
 
 ### Fault-tolerant NICER reduction and Level-3 product orchestration
@@ -9,6 +13,14 @@
 NICERFlow is a Python orchestration program for processing multiple NICER observations in numerical ObsID order. It runs NICERDAS calibration and product-generation tasks, isolates failures by observation, and creates a quick-look comparison between the MKF overshoot-rate diagnostic and the source light curve.
 
 > **Scope:** NICERFlow orchestrates external NICERDAS tools; it does not reimplement NICER calibration or screening algorithms. Scientific products remain dependent on the installed HEASoft/NICERDAS and CALDB versions, the input data, and the explicitly recorded task parameters.
+
+## Visual workflow
+
+<p align="center">
+  <img src="assets/nicerflow-failure-isolation.gif" alt="Synthetic NICERFlow animation demonstrating per-observation failure isolation" width="805">
+</p>
+
+The animation is a **synthetic software-workflow demonstration**. The displayed ObsIDs and statuses are illustrative and are not observational results or scientific validation.
 
 ## **Copyright, permission, and mandatory citation**
 
