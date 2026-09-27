@@ -228,7 +228,7 @@ def main():
         completed.append(obsid)
         print(f"[SUCCESS] ObsID {obsid}")
 
-    print("\n=== NICER Mission Pipeline summary ===")
+    print("\n=== Varun's Custom NICER Pipeline summary ===")
     print(f"Successful observations: {len(completed)}")
     print(f"Failed observations: {len(failed)}")
     if completed:

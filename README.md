@@ -1,23 +1,25 @@
 <p align="center">
-  <img src="assets/nicer-mission-pipeline-banner.png" alt="NICER Mission Pipeline cover showing NICER observation and data-processing workflow" width="100%">
+  <img src="assets/varun-custom-nicer-pipeline-banner.png" alt="Varun's Custom NICER Pipeline cover showing NICER observation and data-processing workflow" width="100%">
 </p>
 
-# NICER Mission Pipeline
+# Varun's Custom NICER Pipeline
 
 ### Fault-tolerant NICER reduction and Level-3 product orchestration
 
-[![Quality checks](https://github.com/varunastronomy/nicer-mission-pipeline/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/varunastronomy/nicer-mission-pipeline/actions/workflows/quality-checks.yml)
+[![Quality checks](https://github.com/varunastronomy/varun-custom-nicer-pipeline/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/varunastronomy/varun-custom-nicer-pipeline/actions/workflows/quality-checks.yml)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![NICERDAS](https://img.shields.io/badge/External-NICERDAS-2563EB)](https://heasarc.gsfc.nasa.gov/docs/nicer/analysis_threads/)
 
-NICER Mission Pipeline is a Python orchestration program for processing multiple NICER observations in numerical ObsID order. It runs NICERDAS calibration and product-generation tasks, isolates failures by observation, and creates a quick-look comparison between the MKF overshoot-rate diagnostic and the source light curve.
+Varun's Custom NICER Pipeline is an independent Python orchestration program for processing multiple NICER observations in numerical ObsID order. It runs NICERDAS calibration and product-generation tasks, isolates failures by observation, and creates a quick-look comparison between the MKF overshoot-rate diagnostic and the source light curve.
 
-> **Scope:** NICER Mission Pipeline orchestrates external NICERDAS tools; it does not reimplement NICER calibration or screening algorithms. Scientific products remain dependent on the installed HEASoft/NICERDAS and CALDB versions, the input data, and the explicitly recorded task parameters.
+> **Independent-software notice:** This is custom research software developed by M. Varun. It is not affiliated with, endorsed by, sponsored by, or maintained by NASA, HEASARC, the NICER mission team, or the official HEASoft/NICERDAS developers. NICERDAS and HEASoft remain the authoritative mission-processing software.
+>
+> **Scope:** This program orchestrates external NICERDAS tools; it does not reimplement NICER calibration or screening algorithms. Scientific products remain dependent on the installed HEASoft/NICERDAS and CALDB versions, the input data, and the explicitly recorded task parameters.
 
 ## Visual workflow
 
 <p align="center">
-  <img src="assets/nicer-mission-pipeline-demo.gif" alt="Synthetic NICER Mission Pipeline animation demonstrating per-observation failure isolation" width="805">
+  <img src="assets/varun-custom-nicer-pipeline-demo.gif" alt="Synthetic animation demonstrating per-observation failure isolation in Varun's Custom NICER Pipeline" width="805">
 </p>
 
 The animation is a **synthetic software-workflow demonstration**. The displayed ObsIDs and statuses are illustrative and are not observational results or scientific validation.
@@ -57,7 +59,7 @@ These are explicit analysis choices, not universal settings for every source or 
 
 ## Failure behaviour
 
-Every external command is checked. If a stage fails, NICER Mission Pipeline prints:
+Every external command is checked. If a stage fails, Varun's Custom NICER Pipeline prints:
 
 ```text
 [FAILED] ObsID 1234567890 | stage: nicerl3-spect | command returned exit status 218
