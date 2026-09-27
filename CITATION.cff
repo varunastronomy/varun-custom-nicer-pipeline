@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "Written permission is required before reuse; approved use must cite this software."
-title: "NICERFlow: Fault-Tolerant NICER Reduction and Product Orchestration"
+title: "NICER Mission Pipeline: Fault-Tolerant Reduction and Product Orchestration"
 type: software
 authors:
   - family-names: "Varun"
     given-names: "M."
     affiliation: "CHRIST (Deemed to be University), Bengaluru, India"
-repository-code: "https://github.com/varunastronomy/nicerflow-pipeline"
+repository-code: "https://github.com/varunastronomy/nicer-mission-pipeline"
 abstract: "A Python orchestration workflow for NICER Level-2 processing, detector selection, Level-3 products, failure isolation, and quick-look diagnostics."
 keywords:
   - NICER

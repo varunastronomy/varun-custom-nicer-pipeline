@@ -1,23 +1,23 @@
 <p align="center">
-  <img src="assets/nicerflow-banner.png" alt="NICERFlow cover showing NICER observation and data-processing workflow" width="100%">
+  <img src="assets/nicer-mission-pipeline-banner.png" alt="NICER Mission Pipeline cover showing NICER observation and data-processing workflow" width="100%">
 </p>
 
-# NICERFlow
+# NICER Mission Pipeline
 
 ### Fault-tolerant NICER reduction and Level-3 product orchestration
 
-[![Quality checks](https://github.com/varunastronomy/nicerflow-pipeline/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/varunastronomy/nicerflow-pipeline/actions/workflows/quality-checks.yml)
+[![Quality checks](https://github.com/varunastronomy/nicer-mission-pipeline/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/varunastronomy/nicer-mission-pipeline/actions/workflows/quality-checks.yml)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![NICERDAS](https://img.shields.io/badge/External-NICERDAS-2563EB)](https://heasarc.gsfc.nasa.gov/docs/nicer/analysis_threads/)
 
-NICERFlow is a Python orchestration program for processing multiple NICER observations in numerical ObsID order. It runs NICERDAS calibration and product-generation tasks, isolates failures by observation, and creates a quick-look comparison between the MKF overshoot-rate diagnostic and the source light curve.
+NICER Mission Pipeline is a Python orchestration program for processing multiple NICER observations in numerical ObsID order. It runs NICERDAS calibration and product-generation tasks, isolates failures by observation, and creates a quick-look comparison between the MKF overshoot-rate diagnostic and the source light curve.
 
-> **Scope:** NICERFlow orchestrates external NICERDAS tools; it does not reimplement NICER calibration or screening algorithms. Scientific products remain dependent on the installed HEASoft/NICERDAS and CALDB versions, the input data, and the explicitly recorded task parameters.
+> **Scope:** NICER Mission Pipeline orchestrates external NICERDAS tools; it does not reimplement NICER calibration or screening algorithms. Scientific products remain dependent on the installed HEASoft/NICERDAS and CALDB versions, the input data, and the explicitly recorded task parameters.
 
 ## Visual workflow
 
 <p align="center">
-  <img src="assets/nicerflow-failure-isolation.gif" alt="Synthetic NICERFlow animation demonstrating per-observation failure isolation" width="805">
+  <img src="assets/nicer-mission-pipeline-demo.gif" alt="Synthetic NICER Mission Pipeline animation demonstrating per-observation failure isolation" width="805">
 </p>
 
 The animation is a **synthetic software-workflow demonstration**. The displayed ObsIDs and statuses are illustrative and are not observational results or scientific validation.
@@ -57,7 +57,7 @@ These are explicit analysis choices, not universal settings for every source or 
 
 ## Failure behaviour
 
-Every external command is checked. If a stage fails, NICERFlow prints:
+Every external command is checked. If a stage fails, NICER Mission Pipeline prints:
 
 ```text
 [FAILED] ObsID 1234567890 | stage: nicerl3-spect | command returned exit status 218
